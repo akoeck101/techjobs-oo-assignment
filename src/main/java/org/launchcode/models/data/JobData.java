@@ -38,7 +38,18 @@ public class JobData {
 
         return null;
     }
-
+    public Employer findEmployerById(int id) {
+        return employers.findById(id);
+    }
+    public Location findLocationById(int id) {
+        return locations.findById(id);
+    }
+    public CoreCompetency findcoreCompetencyById(int id) {
+        return coreCompetencies.findById(id);
+    }
+    public PositionType findPositionTypeById(int id) {
+        return positionTypes.findById(id);
+    }
     public ArrayList<Job> findAll() {
         return jobs;
     }
@@ -81,6 +92,7 @@ public class JobData {
 
 
     public void add(Job job) {
+
         jobs.add(job);
     }
 
